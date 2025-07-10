@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Music Chart</title>
+    <style>
+      Body{
+        background-color:#D03636
+      }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <center>
+      <h1>A Chart of Kendrick Lamar's songs</h1>
+      <div id="plot"></div>
+      <script>
+        let songs = ["Luther", "Euphoria", "30 for 30"];
+        let views = [115379111, 27364702, 63560112];
+        let trace = {
+          x: songs,
+          y: views,
+          type: "bar"
+        };
+        let data = [trace];
+        Plotly.newPlot("plot", data);
+      </script>
+      <p>
+        <a href="index.html">Click here to go back to Home Page</a>
+      </p>
+    </center>
+    <footer>
+      <center>
+        <hr>
+        <p>
+          <i>Dimorri's Website &copy;2025</i>
+        </p>
+      </center>
+    </footer>
+  </body>
+</html>
