@@ -15,8 +15,8 @@ let circleMarker = L.circle(coordinates, {
   color: "black",
   fillColor: "red",
   fillOpacity: 0.5,
-  radius: 500
-}).bindPopup("<center>
+  radius: 100
+}).bindPopup(`<center>
              <h3>Hello From Tokyo,Japan!</h3>
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/IuTDuvYr7f0?si=e6mtcPH-UedqxK51" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-             </center>").addTo(map);
+             <iframe width="200" height="100" src="https://www.youtube.com/embed/IuTDuvYr7f0?si=e6mtcPH-UedqxK51" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             </center>`).addTo(map);
